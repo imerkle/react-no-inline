@@ -1,0 +1,12 @@
+{
+  "name": "react-no-inline",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:dsslimshaddy/react-no-inline.git",
+  "author": "Slim Shady <dsslimshaddy@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "prop-types": "^15.5.10",
+    "styletron-utils": "^2.5.4"
+  }
+}
