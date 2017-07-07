@@ -1,12 +1,29 @@
 {
   "name": "react-no-inline",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "main": "index.js",
   "repository": "git@github.com:dsslimshaddy/react-no-inline.git",
   "author": "Slim Shady <dsslimshaddy@gmail.com>",
   "license": "MIT",
+  "files": [
+    "index.js",
+    "lib/"
+  ],
+  "scripts": {
+    "build": "rm -rf lib/ && babel src --out-dir lib --copy-files --ignore spec.js",
+    "prepublish": "yarn build",
+    "fmt": "prettier --single-quote --trailing-comma --parser flow --write 'src/**/*.js'",
+    "test": "mocha"
+  },
   "dependencies": {
     "prop-types": "^15.5.10",
     "styletron-utils": "^2.5.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "react": "^15.6.1"
   }
 }
